@@ -44,8 +44,8 @@ const Signup = () => {
         username: userName,
         name: name,
         password: password,
-        avatar: "", // Placeholder or generated avatar URL
-        bio: "", // Optional fields as per your preference
+        avatar: "https://via.placeholder.com/40", 
+        bio: "", 
         tweet: {},
         joinDate: new Date().toISOString(),
         followers: 0,
@@ -53,7 +53,7 @@ const Signup = () => {
       })
       .then(() => {
         localStorage.setItem("user", JSON.stringify({ username: userName }));
-        navigate("/"); // Redirect to home page upon successful signup
+        navigate("/"); 
       })
       .catch((error) => console.error(error));
   };
@@ -66,10 +66,8 @@ const Signup = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-800">
       <div className="max-w-md w-full bg-gray-900 p-8 rounded-xl shadow-md">
-        {/* Logo */}
         <h1 className="text-center text-3xl font-bold text-white mb-6">X</h1>
         
-        {/* Form */}
         <form onSubmit={submit} className="space-y-4">
           <input 
             type="text" 
@@ -93,13 +91,11 @@ const Signup = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           
-          {/* Error Message */}
           {mess && <p className="text-red-500 text-center">{mess}</p>}
           
           <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-full font-semibold hover:bg-blue-600 transition">Sign Up</button>
         </form>
         
-        {/* Login Link */}
         <div className="text-center mt-4">
           <p className="text-gray-600">Already have an account? 
             <Link to="/login" className="text-white font-semibold ml-1 hover:underline">Log in</Link>

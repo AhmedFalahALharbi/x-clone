@@ -2,7 +2,6 @@ const Trending = () => {
     const trends = [
       { id: 1, title: '#HOTD', description: 'متداول في المملكة' },
       { id: 2, title: 'الراتب الأساسي', description: 'متداول في المملكة' },
-      // Additional trends...
     ];
   
     return (

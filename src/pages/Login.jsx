@@ -51,10 +51,8 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-800">
       <div className="max-w-md w-full bg-gray-900 p-8 rounded-xl shadow-md">
-        {/* Logo */}
         <h1 className="text-center text-3xl font-bold text-white mb-6">X</h1>
         
-        {/* Form */}
         <form onSubmit={submit} className="space-y-4">
           <input 
             type="text" 
@@ -71,13 +69,11 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           
-          {/* Error Message */}
           {mess && <p className="text-red-500 text-center">{mess}</p>}
           
           <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-full font-semibold hover:bg-blue-600 transition">Log In</button>
         </form>
         
-        {/* Signup Link */}
         <div className="text-center mt-4">
           <p className="text-gray-600">Don’t have an account? 
             <Link to="/signup" className="text-white font-semibold ml-1 hover:underline">Sign up</Link>

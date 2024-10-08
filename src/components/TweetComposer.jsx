@@ -6,7 +6,6 @@ const TweetComposer = ({ onTweet }) => {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    // Fetch user data from the API
     const storedUser = JSON.parse(localStorage.getItem("user"));
     axios
       .get(`https://66e7e6bfb17821a9d9da7097.mockapi.io/Twitter?username=${storedUser.username}`)
@@ -27,7 +26,7 @@ const TweetComposer = ({ onTweet }) => {
         })
         .then(response => {
           onTweet(response.data);
-          setContent(""); // Reset the textarea
+          setContent(""); 
         })
         .catch(error => console.error("Error posting tweet:", error));
     }

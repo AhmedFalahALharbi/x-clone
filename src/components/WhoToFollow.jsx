@@ -1,8 +1,8 @@
 const WhoToFollow = () => {
     const suggestions = [
-      { id: 1, name: 'Jane Doe', handle: '@janedoe', profilePic: 'https://via.placeholder.com/40' },
-      { id: 2, name: 'John Smith', handle: '@johnsmith', profilePic: 'https://via.placeholder.com/40' },
-      { id: 3, name: 'Alice Johnson', handle: '@alicejohnson', profilePic: 'https://via.placeholder.com/40' },
+      { id: 1, name: 'khalid', handle: '@khalid', profilePic: 'https://via.placeholder.com/40' },
+      { id: 2, name: 'nasser', handle: '@nasser', profilePic: 'https://via.placeholder.com/40' },
+      { id: 3, name: ' saad', handle: '@saad', profilePic: 'https://via.placeholder.com/40' },
     ];
   
     return (
